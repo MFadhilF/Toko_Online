@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }  
+}
+
+.warna1 {
+  background-color: #618264;
+}
+
+.warna2 {
+  background-color: #79ac78;
+}
+.warna3 {
+  background-color: #b0d9b1;
+}
+
+.warna4 {
+  background-color: #d0e7d2;
+}
+
+.banner{
+height: 80vh;
+background : linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/banner2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+.highlighted-kategori{
+  height: 250px;
+}
+
+.kategori-Kemeja{
+  background : linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/Kemeja.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.kategori-jaket{
+  background : linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/jaket.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.kategori-sepatu{
+  background : linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/sepatu.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.no-deco-text {
+  text-decoration: none;
+  color: white;
+  }
+
+.no-deco-text:hover{
+  color: #b0d9b1;
+}
+
+.text-harga{
+  font-size: 30px;
+  color: #79ac78;
+}
+
+.image-box{
+  height: 250px;
+  box-shadow:black;
+}
+
+.image-box img{
+  height: 200%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-subscribe{
+  background-color: rgba(0, 0, 0, 0.7) ;
+}
+
+.banner-produk{
+height: 45vh;
+background : linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/banner2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 30%;
+}
+
+.produk-terkait-image{
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: center;
+
+}
